@@ -33,11 +33,6 @@ function Hero() {
       <section id="hero" className={styles.container}>
         <div className={styles.colorModeContainer}>
           <img
-            className={styles.hero}
-            src={heroImg}
-            alt="Profile picture of Aleksandar Antonov"
-          />
-          <img
             className={styles.colorMode}
             src={themeIcon}
             alt="Color mode"
