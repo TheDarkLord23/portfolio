@@ -1,7 +1,8 @@
 :root {
-  --background-color: #fff;
+  --background-color: #f9f9f9;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
+  --btn-outline-text-color: #222;
   --project-card-bg: #fff;
   --text-color: #222;
   --form-text-color: #555;
@@ -12,6 +13,7 @@
   --background-color: #222;
   --btn-color: #fff;
   --btn-text-color: #222;
+  --btn-outline-text-color: #fff;
   --project-card-bg: rgb(53, 52, 52);
   --text-color: #fff;
   --form-text-color: #fff;
@@ -81,6 +83,7 @@ p {
 @media (width >= 800px) {
   #root {
     gap: 100px;
+    width: 100%;
   }
   h1 {
     font-size: 40px;

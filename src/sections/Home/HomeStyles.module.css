@@ -1,11 +1,14 @@
 :root {
-  --background-color: #fff;
+  --background-color: #f9f9f9;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #fff;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --project-card-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -10px -10px 10px white;
+  --thumbnail-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), -5px -5px 5px white;
 }
 
 [data-theme="dark"] {
@@ -16,6 +19,9 @@
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --project-card-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+    -3px -3px 5px rgba(255, 255, 255, 0.1);
+  --thumbnail-shadow: none;
 }
 
 body {
@@ -38,6 +44,11 @@ p {
   color: var(--text-color);
   margin: 0;
   padding: 0;
+}
+
+h4 {
+  color: var(--text-color);
+  font-family: "Roboto Mono", monospace;
 }
 
 h2,
