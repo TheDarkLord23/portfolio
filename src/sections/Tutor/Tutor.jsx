@@ -66,7 +66,7 @@ function Tutor() {
               </button>
             </a>
           </div>
-          <hr />
+          <hr className={styles.divider} />
           <div className={styles.about}>
             <h3>Wlecome to Tutor Masters!</h3>
             <section className={styles.projectDescription}>
@@ -141,7 +141,7 @@ function Tutor() {
         </div>
         <div className={styles.right}>
           <img src={IMG} alt="Tutor Thumbnail" className={styles.thumbnail} />
-          <hr />
+          <hr className={styles.divider} />
           <div className={styles.info}>
             <div className={styles.infoInner}>
               <h3>Programs:</h3>
@@ -179,7 +179,7 @@ function Tutor() {
           </div>
         </div>
       </div>
-      <hr />
+      <hr className={styles.divider} />
       <div className={styles.highlights}>
         <h1>Project Highlights</h1>
         <div className={styles.btns}>
@@ -304,6 +304,7 @@ function Tutor() {
           />
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 }
