@@ -1,0 +1,59 @@
+/* Carousel.module.css */
+.carousel {
+  position: relative;
+  width: 100%; /* Set carousel width to 90% */
+  margin: 0 auto; /* Center the carousel */
+  overflow: hidden; /* Hide overflow */
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%; /* Ensure inner carousel width is 100% of its container */
+}
+
+.carouselItem {
+  padding-left: 5%;
+  padding-right: 5%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.carouselItem img {
+  width: 100%;
+  display: block;
+}
+
+.carouselControls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.carouselControlLeft,
+.carouselControlRight {
+  width: 50px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.carouselControlLeft {
+  transform: rotate(90deg);
+}
+
+.carouselControlRight {
+  transform: rotate(-90deg);
+}
+
+.carouselControl:focus {
+  outline: none;
+}

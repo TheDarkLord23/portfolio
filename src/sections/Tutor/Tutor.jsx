@@ -243,7 +243,7 @@ function Tutor() {
           <h1>Components</h1>
           <div className={styles.LogoDiv}>
             <img src={Logo} title="Logo" className={styles.Logo} />
-            <div className={styles.Text}>
+            <div className={styles.innerText}>
               <p>
                 The "Tutor Masters" logo features a clean, modern graduation cap
                 symbolizing academic achievement and excellence. Designed with
@@ -255,7 +255,18 @@ function Tutor() {
               </p>
             </div>
           </div>
-          <img src={Hero} title="Hero" className={styles.Hero} />
+          <div className={styles.heroDiv}>
+            <div className={styles.innerText}>
+              <h3>Hero</h3>
+              <p>
+                Featuring a vector image alongside our motto to set the tone. A
+                prominent call-to-action button encourages immediate engagement,
+                while the highlights beneath showcase the key benefits we
+                provide.
+              </p>
+            </div>
+            <img src={Hero} title="Hero" className={styles.Hero} />
+          </div>
           <img src={Upcoming} title="Upcoming" className={styles.Upcoming} />
           <img src={Review} title="Review" className={styles.Review} />
           <img src={FooterPic} title="FooterPic" className={styles.FooterPic} />
