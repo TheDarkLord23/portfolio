@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./ProjectsStyles.module.css";
 import Tutor from "../../assets/Tutor/banner.jpg";
+import Alumni from "../../assets/Alumni/Thumbnail.png";
 import IMG from "../../assets/project.png";
 import ProjectCard from "../../common/ProjectCard";
 
@@ -26,10 +27,10 @@ function Projects() {
           description="Unlock your potential with the best University Tutors"
         />
         <ProjectCard
-          src={IMG}
+          src={Alumni}
           link="/alumni"
-          title="Alumni Website"
-          description="habfhsvdfiuhsbdofiuhasdbvofih"
+          title="Code Factory Alumni"
+          description="Unveiling the Success Stories of Code Factory graduates"
         />
         <ProjectCard
           src={IMG}

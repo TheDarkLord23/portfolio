@@ -3,6 +3,7 @@ import sun from "../../assets/sun.png";
 import moon from "../../assets/moon.svg";
 import { useTheme } from "../../common/ThemeContext";
 import IMG from "../../assets/Tutor/banner.jpg";
+import ScrollToTopButton from "../../common/ScrollToTop.jsx";
 import vscode from "../../assets/vscode.png";
 import figma from "../../assets/figma.png";
 import photoshop from "../../assets/photoshop.png";
@@ -10,7 +11,6 @@ import Language from "../../common/Language";
 import Footer from "../Footer/Footer";
 import Hero from "../../assets/Tutor/Hero.png";
 import Review from "../../assets/Tutor/Review.png";
-import FooterPic from "../../assets/Tutor/FooterPic.png";
 import Courses from "../../assets/Tutor/Courses.png";
 import Contact from "../../assets/Tutor/Contact.png";
 import Login from "../../assets/Tutor/Login.png";
@@ -18,6 +18,7 @@ import Register from "../../assets/Tutor/Register.png";
 import StudentDash from "../../assets/Tutor/StudentDash.png";
 import ProfileUpdate from "../../assets/Tutor/ProfileUpdate.png";
 import MyReviews from "../../assets/Tutor/MyReviews.png";
+import ReviewUpdate from "../../assets/Tutor/ReviewUpdate.png";
 import TeacherDash from "../../assets/Tutor/TeacherDash.png";
 import Allusers from "../../assets/Tutor/Allusers.png";
 import Enrolled from "../../assets/Tutor/Enrolled.png";
@@ -35,6 +36,7 @@ function Tutor() {
 
   return (
     <section id="project" className={styles.container}>
+      <h1>RESPONSIVE SECTION</h1>
       <div className={styles.topSection}>
         <a href="/#projects">
           <button className="hover" id={styles.home}>
@@ -175,6 +177,57 @@ function Tutor() {
                   <Language language="Other" percent="0.5%" />
                 </div>
               </div>
+              <div className={styles.contributors}>
+                <h3>Contributors:</h3>
+                <div className={styles.contributorsGrid}>
+                  <a
+                    href="https://github.com/relaxedomlette"
+                    className={styles.contributor}
+                    target="blank"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/156616153?v=4"
+                      alt="AnnaProfileImg"
+                    />
+                    <h4>Anna</h4>
+                  </a>
+
+                  <a
+                    href="https://github.com/UchiaLord"
+                    className={styles.contributor}
+                    target="blank"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/121878603?v=4"
+                      alt="BenediktProfileImg"
+                    />
+                    <h4>Benedikt</h4>
+                  </a>
+
+                  <a
+                    href="https://github.com/borisvlaovic"
+                    className={styles.contributor}
+                    target="blank"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/151388829?v=4"
+                      alt="BorisProfileImg"
+                    />
+                    <h4>Boris</h4>
+                  </a>
+                  <a
+                    href="https://github.com/DacianSB"
+                    className={styles.contributor}
+                    target="blank"
+                  >
+                    <img
+                      src="https://avatars.githubusercontent.com/u/156659670?v=4"
+                      alt="DacianProfileImg"
+                    />
+                    <h4>Dacian</h4>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -194,17 +247,7 @@ function Tutor() {
               Components
             </button>
           </a>
-          <a href="#CRUD">
-            <button
-              className={
-                theme === "dark"
-                  ? styles.highlightsBtnDark
-                  : styles.highlightsBtnLight
-              }
-            >
-              CRUD
-            </button>
-          </a>
+
           <a href="#Student">
             <button
               className={
@@ -255,6 +298,7 @@ function Tutor() {
               </p>
             </div>
           </div>
+
           <div className={styles.heroDiv}>
             <div className={styles.innerText}>
               <h3>Hero</h3>
@@ -267,54 +311,164 @@ function Tutor() {
             </div>
             <img src={Hero} title="Hero" className={styles.Hero} />
           </div>
-          <img src={Upcoming} title="Upcoming" className={styles.Upcoming} />
-          <img src={Review} title="Review" className={styles.Review} />
-          <img src={FooterPic} title="FooterPic" className={styles.FooterPic} />
-          <img src={Contact} title="Contact" className={styles.Contact} />
-          <img src={Login} title="Login" className={styles.Login} />
-          <img src={Register} title="Register" className={styles.Register} />
-          <img src={Courses} title="Courses" className={styles.Courses} />
-          <img
-            src={StudentDash}
-            title="StudentDash"
-            className={styles.StudentDash}
-          />
-          <img
-            src={ProfileUpdate}
-            title="ProfileUpdate"
-            className={styles.ProfileUpdate}
-          />
-          <img src={MyReviews} title="MyReviews" className={styles.MyReviews} />
-          <img
-            src={TeacherDash}
-            title="TeacherDash"
-            className={styles.TeacherDash}
-          />
-          <img src={Enrolled} title="Enrolled" className={styles.Enrolled} />
-          <img src={AdminDash} title="AdminDash" className={styles.AdminDash} />
-          <img src={Allusers} title="Allusers" className={styles.Allusers} />
-          <img
-            src={UserCreate}
-            title="UserCreate"
-            className={styles.UserCreate}
-          />
-          <img
-            src={UserUpdate}
-            title="UserUpdate"
-            className={styles.UserUpdate}
-          />
-          <img
-            src={CourseCreate}
-            title="CourseCreate"
-            className={styles.CourseCreate}
-          />
-          <img
-            src={CourseUpdate}
-            title="CourseUpdate"
-            className={styles.CourseUpdate}
-          />
+
+          <div className={styles.upcomingDiv}>
+            <img src={Upcoming} title="Upcoming" className={styles.Upcoming} />
+            <div className={styles.innerText}>
+              <h3>Upcoming Courses</h3>
+              <p>
+                This section showcases 4 of the upcoming courses on Tutor
+                Masters.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.reviewsDiv}>
+            <div className={styles.innerText}>
+              <h3>Reviews</h3>
+              <p>
+                Featuring a carousel slider with reviews from students who have
+                attended or are attending a certan course.
+              </p>
+            </div>
+            <img src={Review} title="Review" className={styles.Review} />
+          </div>
+
+          <div className={styles.contactsDiv}>
+            <img src={Contact} title="Contact" className={styles.Contact} />
+            <div className={styles.innerText}>
+              <h3>Contacts</h3>
+              <p>
+                Using Google Maps map displaying our current location, a
+                floating-like section with our opening hours and contact
+                information and a functioning contact form.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.contactsDiv}>
+            <img src={Login} title="Login" className={styles.Login} />
+            <div className={styles.innerText}>
+              <h3>Login and Registration</h3>
+              <p>
+                Two cleand and simple forms for fast logging in or registration
+                with option for uploading a profile picture.
+              </p>
+            </div>
+            <img src={Register} title="Register" className={styles.Register} />
+          </div>
+
+          <div className={styles.contactsDiv}>
+            <div className={styles.innerText}>
+              <h3>Courses</h3>
+              <p>
+                The Courses page displays all available courses on our website.
+                Featuring a custom JavaScript filter that helpes the user search
+                for courses without refreshing the page.
+              </p>
+            </div>
+            <img src={Courses} title="Courses" className={styles.Courses} />
+          </div>
+          <div id="Student" className={styles.StudentDiv}>
+            <h1>Student</h1>
+            <div className={styles.dashboardStudentDiv}>
+              <p>
+                The user with role Student has a custom dashboard from where he
+                can acces his booked courses (upcoming, ongoing or finished),
+                view and update his reviews, have acces to the calendar
+                containing the schedule for all courses as well as updating his
+                profile information.
+              </p>
+              <img
+                src={StudentDash}
+                title="StudentDash"
+                className={styles.StudentDash}
+              />
+            </div>
+            <div className={styles.underStudentDiv}>
+              <img
+                src={ProfileUpdate}
+                title="ProfileUpdate"
+                className={styles.ProfileUpdate}
+              />
+              <div className={styles.ReviewDiv}>
+                <img
+                  src={MyReviews}
+                  title="MyReviews"
+                  className={styles.MyReviews}
+                />
+                <img
+                  src={ReviewUpdate}
+                  title="ReviewUpdate"
+                  className={styles.ReviewUpdate}
+                />
+              </div>
+            </div>
+          </div>
+          <div id="Tutor" className={styles.TutorDiv}>
+            <h1>Tutor</h1>
+            <p>
+              From his dashboard, the user with role Tutor again has acces to
+              the calendar and his profile info. He can view and edit all of his
+              courses (upcoming, ongoing or finished) as well as create new
+              courses. He also has access to all students enrolled a certain
+              course with an option to remove the student from the course.
+            </p>
+            <img
+              src={TeacherDash}
+              title="TeacherDash"
+              className={styles.TeacherDash}
+            />
+            <div className={styles.underTutorDiv}>
+              <img
+                src={Enrolled}
+                title="Enrolled"
+                className={styles.Enrolled}
+              />
+              <img
+                src={CourseUpdate}
+                title="CourseUpdate"
+                className={styles.CourseUpdate}
+              />
+            </div>
+          </div>
+
+          <div id="Admin" className={styles.AdminDiv}>
+            <h1>Admin</h1>
+            <p>
+              The Admin has full control over the platform, including all the
+              capabilities of the Student and Tuto roles. He can view all
+              registered accounts as well as edit and create new ones. He can
+              also choose or change the role of the new or already existing
+              account.
+            </p>
+            <img
+              src={AdminDash}
+              title="AdminDash"
+              className={styles.AdminDash}
+            />
+            <img src={Allusers} title="Allusers" className={styles.Allusers} />
+            <div className={styles.underAdminDiv}>
+              <img
+                src={UserUpdate}
+                title="UserUpdate"
+                className={styles.UserUpdate}
+              />
+              <img
+                src={UserCreate}
+                title="UserCreate"
+                className={styles.UserCreate}
+              />
+              <img
+                src={CourseCreate}
+                title="CourseCreate"
+                className={styles.CourseCreate}
+              />
+            </div>
+          </div>
         </div>
       </div>
+      <ScrollToTopButton></ScrollToTopButton>
       <Footer></Footer>
     </section>
   );
