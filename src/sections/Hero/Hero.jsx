@@ -54,13 +54,25 @@ function Hero() {
               href="https://www.linkedin.com/in/aleksandar-antonov-6222bb263/"
               target="_blank"
             >
-              <img src={linkedinIcon} alt="Linkedin icon" />
+              <img
+                className={styles.socials}
+                src={linkedinIcon}
+                alt="Linkedin icon"
+              />
             </a>
             <a href="https://github.com/TheDarkLord23" target="_blank">
-              <img src={githubIcon} alt="Github icon" />
+              <img
+                className={styles.socials}
+                src={githubIcon}
+                alt="Github icon"
+              />
             </a>
             <a href="https://www.facebook.com/alex2312200/" target="_blank">
-              <img src={facebookIcon} alt="Facebook icon" />
+              <img
+                className={styles.socials}
+                src={facebookIcon}
+                alt="Facebook icon"
+              />
             </a>
           </span>
           <p className={styles.description}>

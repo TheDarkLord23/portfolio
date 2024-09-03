@@ -24,6 +24,10 @@
     }
   }
 
+  .socials {
+    border-radius: 0;
+  }
+
   a {
     width: fit-content;
     align-self: center;
