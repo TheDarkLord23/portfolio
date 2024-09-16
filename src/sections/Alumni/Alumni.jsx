@@ -9,31 +9,35 @@ import figma from "../../assets/figma.png";
 import photoshop from "../../assets/photoshop.png";
 import Angular from "../../assets/angular.png";
 import Language from "../../common/Language";
+import LogoDark from "../../assets/Alumni/Dark mode/logo.png";
+import LogoLight from "../../assets/Alumni/Light mode/logo.png";
+import FactoryDark from "../../assets/Alumni/Dark mode/factory.png";
+import FactoryLight from "../../assets/Alumni/Light mode/factory.png";
+import NumbersDark from "../../assets/Alumni/Dark mode/numbers.png";
+import NumbersLight from "../../assets/Alumni/Light mode/numbers.png";
+import ColorDark from "../../assets/Alumni/Dark mode/color.png";
+import ColorLight from "../../assets/Alumni/Light mode/color.png";
+import Hero from "../../assets/Alumni/Elements/Hero.png";
+import Testimonials from "../../assets/Alumni/Elements/testimonials.mp4";
+import About from "../../assets/Alumni/Elements/AboutUs.png";
+import Events from "../../assets/Alumni/Elements/Events.png";
+import Alumni1 from "../../assets/Alumni/Elements/Alumni.png";
+import AlumniDetails from "../../assets/Alumni/Elements/AlumniDetails.png";
+import OpportIndex from "../../assets/Alumni/Elements/OpportIndex.png";
+import OpportFS from "../../assets/Alumni/Elements/OpportFS.png";
+import OpporttJS from "../../assets/Alumni/Elements/OpporttJS.png";
+import OpportTop from "../../assets/Alumni/Elements/OpportTop.png";
+import OpporttP from "../../assets/Alumni/Elements/OpporttP.png";
+import JobOffers from "../../assets/Alumni/Elements/JobOffers.png";
 import Footer from "../Footer/Footer";
-import Hero from "../../assets/Tutor/Hero.png";
-import Review from "../../assets/Tutor/Review.png";
-import Courses from "../../assets/Tutor/Courses.png";
-import Contact from "../../assets/Tutor/Contact.png";
-import Login from "../../assets/Tutor/Login.png";
-import Register from "../../assets/Tutor/Register.png";
-import StudentDash from "../../assets/Tutor/StudentDash.png";
-import ProfileUpdate from "../../assets/Tutor/ProfileUpdate.png";
-import MyReviews from "../../assets/Tutor/MyReviews.png";
-import ReviewUpdate from "../../assets/Tutor/ReviewUpdate.png";
-import TeacherDash from "../../assets/Tutor/TeacherDash.png";
-import Allusers from "../../assets/Tutor/Allusers.png";
-import Enrolled from "../../assets/Tutor/Enrolled.png";
-import AdminDash from "../../assets/Tutor/AdminDash.png";
-import CourseCreate from "../../assets/Tutor/CourseCreate.png";
-import UserCreate from "../../assets/Tutor/UserCreate.png";
-import UserUpdate from "../../assets/Tutor/UserUpdate.png";
-import CourseUpdate from "../../assets/Tutor/CourseUpdate.png";
-import Upcoming from "../../assets/Tutor/Upcoming.png";
-import Logo from "../../assets/Tutor/Logo.png";
 
 function Alumni() {
   const { theme, toggleTheme } = useTheme();
   const themeIcon = theme === "light" ? sun : moon;
+  const Logo = theme === "light" ? LogoLight : LogoDark;
+  const Factory = theme === "light" ? FactoryLight : FactoryDark;
+  const Numbers = theme === "light" ? NumbersLight : NumbersDark;
+  const Color = theme === "light" ? ColorLight : ColorDark;
 
   return (
     <section id="project" className={styles.container}>
@@ -212,7 +216,7 @@ function Alumni() {
             </button>
           </a>
 
-          <a href="#Student">
+          <a href="#Alumni">
             <button
               className={
                 theme === "dark"
@@ -220,10 +224,10 @@ function Alumni() {
                   : styles.highlightsBtnLight
               }
             >
-              Student
+              Alumni
             </button>
           </a>
-          <a href="#Tutor">
+          <a href="#Events">
             <button
               className={
                 theme === "dark"
@@ -231,10 +235,10 @@ function Alumni() {
                   : styles.highlightsBtnLight
               }
             >
-              Tutor
+              Events
             </button>
           </a>
-          <a href="#Admin">
+          <a href="#Careers">
             <button
               className={
                 theme === "dark"
@@ -242,24 +246,52 @@ function Alumni() {
                   : styles.highlightsBtnLight
               }
             >
-              Admin
+              Careers
             </button>
           </a>
         </div>
         <div id="Components" className={styles.ComponentsDiv}>
-          <h1>Components</h1>
-          <div className={styles.LogoDiv}>
-            <img src={Logo} title="Logo" className={styles.Logo} />
-            <div className={styles.innerText}>
-              <p>
-                The "Tutor Masters" logo features a clean, modern graduation cap
-                symbolizing academic achievement and excellence. Designed with
-                sleek lines and balanced proportions, the cap represents the
-                website's mission to help students prepare for university exams.
-                Created using Photoshop, this logo effectively captures the
-                essence of learning and success, making it a perfect fit for a
-                platform that connects students with expert tutors.
-              </p>
+          <h1>Index</h1>
+          <div className={styles.LogoOuterDiv}>
+            <div className={styles.LogoDiv}>
+              <img src={Logo} title="Logo" className={styles.Logo} />
+              <div className={styles.innerText}>
+                <h3>Components</h3>
+                <p>
+                  In the Code Factory Alumni logo I have combined the concept of
+                  a factory with a digital theme. The orange silhouette of a
+                  factory chimney forms the central figure, symbolizing the idea
+                  of production and creation. Instead of traditional smoke, a
+                  stream of binary code (1s and 0s) emerges from the chimney,
+                  representing the output of coding and programming knowledge.
+                  The industrial design of the factory paired with the
+                  tech-driven binary "smoke" effectively conveys the company's
+                  focus on developing skilled coders and digital creators.
+                </p>
+              </div>
+            </div>
+            <h2>Logo Elements</h2>
+            <div className={styles.LogoElementsDiv}>
+              <div className={styles.Element}>
+                <img
+                  className={styles.ElementImg}
+                  src={Factory}
+                  alt="Factory"
+                />
+                <h3>Factory</h3>
+              </div>
+              <div className={styles.Element}>
+                <img
+                  className={styles.ElementImg}
+                  src={Numbers}
+                  alt="Numbers"
+                />
+                <h3>Binary Code</h3>
+              </div>
+              <div className={styles.Element}>
+                <img className={styles.ElementImg} src={Color} alt="Color" />
+                <h3>Accent Color</h3>
+              </div>
             </div>
           </div>
 
@@ -276,158 +308,117 @@ function Alumni() {
             <img src={Hero} title="Hero" className={styles.Hero} />
           </div>
 
-          <div className={styles.upcomingDiv}>
-            <img src={Upcoming} title="Upcoming" className={styles.Upcoming} />
+          <div className={styles.aboutDiv}>
+            <img src={About} title="About" className={styles.About} />
             <div className={styles.innerText}>
-              <h3>Upcoming Courses</h3>
+              <h3>About</h3>
               <p>
-                This section showcases 4 of the upcoming courses on Tutor
-                Masters.
+                This section consists of a small introoduction and information
+                about us and our work, a picture focusing on the learning
+                environment in our facility and a CTA button leading to our
+                application form.
               </p>
             </div>
           </div>
 
-          <div className={styles.reviewsDiv}>
+          <div className={styles.vidDiv}>
             <div className={styles.innerText}>
-              <h3>Reviews</h3>
+              <h3>Testimonials</h3>
               <p>
-                Featuring a carousel slider with reviews from students who have
-                attended or are attending a certan course.
+                3 Cards with animation on hover that showcase some of our
+                graduates' testimonials as well as a CTA button leading to all
+                the testimonials.
               </p>
             </div>
-            <img src={Review} title="Review" className={styles.Review} />
+            <video className={styles.vid} autoPlay loop muted playsInline>
+              <source src={Testimonials} type="video/mp4" />
+            </video>
           </div>
 
-          <div className={styles.contactsDiv}>
-            <img src={Contact} title="Contact" className={styles.Contact} />
-            <div className={styles.innerText}>
-              <h3>Contacts</h3>
+          <div id="Alumni" className={styles.AlumniDiv}>
+            <h1>Alumni</h1>
+            <div className={styles.innerAlumniDiv}>
               <p>
-                Using Google Maps map displaying our current location, a
-                floating-like section with our opening hours and contact
-                information and a functioning contact form.
+                Here the user can see our most successful Alumni and read about
+                their accomplishments in the field of Programming.
               </p>
-            </div>
-          </div>
-
-          <div className={styles.contactsDiv}>
-            <img src={Login} title="Login" className={styles.Login} />
-            <div className={styles.innerText}>
-              <h3>Login and Registration</h3>
-              <p>
-                Two cleand and simple forms for fast logging in or registration
-                with option for uploading a profile picture.
-              </p>
-            </div>
-            <img src={Register} title="Register" className={styles.Register} />
-          </div>
-
-          <div className={styles.contactsDiv}>
-            <div className={styles.innerText}>
-              <h3>Courses</h3>
-              <p>
-                The Courses page displays all available courses on our website.
-                Featuring a custom JavaScript filter that helpes the user search
-                for courses without refreshing the page.
-              </p>
-            </div>
-            <img src={Courses} title="Courses" className={styles.Courses} />
-          </div>
-          <div id="Student" className={styles.StudentDiv}>
-            <h1>Student</h1>
-            <div className={styles.dashboardStudentDiv}>
-              <p>
-                The user with role Student has a custom dashboard from where he
-                can acces his booked courses (upcoming, ongoing or finished),
-                view and update his reviews, have acces to the calendar
-                containing the schedule for all courses as well as updating his
-                profile information.
-              </p>
+              <img src={Alumni1} title="Alumni1" className={styles.Alumni1} />
               <img
-                src={StudentDash}
-                title="StudentDash"
-                className={styles.StudentDash}
+                src={AlumniDetails}
+                title="AlumniDetails"
+                className={styles.AlumniDetails}
               />
             </div>
-            <div className={styles.underStudentDiv}>
+          </div>
+
+          <div id="Events" className={styles.EventsDiv}>
+            <h1>Events</h1>
+            <p>
+              Featuring a carousel slider with reviews from students who have
+              attended or are attending a certan course.
+            </p>
+            <div className={styles.InnerEventsDiv}>
+              <img src={Events} title="Events" className={styles.Events} />
+            </div>
+          </div>
+
+          <div id="Careers" className={styles.CareersDiv}>
+            <h1>Career</h1>
+            <p>
+              Here the User can choose to read about the Career Opportunities he
+              will have as a CodeFactory Alumni or see our Job Offers page.
+            </p>
+            <img
+              src={OpportIndex}
+              title="OpportIndex"
+              className={styles.CareersIMG}
+            />
+
+            <div className={styles.OpportDiv}>
               <img
-                src={ProfileUpdate}
-                title="ProfileUpdate"
-                className={styles.ProfileUpdate}
+                src={OpportTop}
+                title="OpportTop"
+                className={styles.OpportTop}
               />
-              <div className={styles.ReviewDiv}>
-                <img
-                  src={MyReviews}
-                  title="MyReviews"
-                  className={styles.MyReviews}
-                />
-                <img
-                  src={ReviewUpdate}
-                  title="ReviewUpdate"
-                  className={styles.ReviewUpdate}
-                />
+              <div className={styles.innerText}>
+                <h3>Career Opportunities</h3>
+                <p>
+                  The hero section consists of some information about the page
+                  content and buttons that scroll down the page to the selected
+                  topic.
+                </p>
               </div>
             </div>
-          </div>
-          <div id="Tutor" className={styles.TutorDiv}>
-            <h1>Tutor</h1>
-            <p>
-              From his dashboard, the user with role Tutor again has acces to
-              the calendar and his profile info. He can view and edit all of his
-              courses (upcoming, ongoing or finished) as well as create new
-              courses. He also has access to all students enrolled a certain
-              course with an option to remove the student from the course.
-            </p>
             <img
-              src={TeacherDash}
-              title="TeacherDash"
-              className={styles.TeacherDash}
+              src={OpportFS}
+              title="OpportFS"
+              className={styles.CareersIMG}
             />
-            <div className={styles.underTutorDiv}>
-              <img
-                src={Enrolled}
-                title="Enrolled"
-                className={styles.Enrolled}
-              />
-              <img
-                src={CourseUpdate}
-                title="CourseUpdate"
-                className={styles.CourseUpdate}
-              />
-            </div>
-          </div>
-
-          <div id="Admin" className={styles.AdminDiv}>
-            <h1>Admin</h1>
-            <p>
-              The Admin has full control over the platform, including all the
-              capabilities of the Student and Tuto roles. He can view all
-              registered accounts as well as edit and create new ones. He can
-              also choose or change the role of the new or already existing
-              account.
-            </p>
             <img
-              src={AdminDash}
-              title="AdminDash"
-              className={styles.AdminDash}
+              src={OpporttP}
+              title="OpporttP"
+              className={styles.CareersIMG}
             />
-            <img src={Allusers} title="Allusers" className={styles.Allusers} />
-            <div className={styles.underAdminDiv}>
+            <img
+              src={OpporttJS}
+              title="OpporttJS"
+              className={styles.CareersIMG}
+            />
+            <div className={styles.JobsDiv}>
               <img
-                src={UserUpdate}
-                title="UserUpdate"
-                className={styles.UserUpdate}
+                src={JobOffers}
+                title="JobOffers"
+                className={styles.JobOffers}
               />
-              <img
-                src={UserCreate}
-                title="UserCreate"
-                className={styles.UserCreate}
-              />
-              <img
-                src={CourseCreate}
-                title="CourseCreate"
-                className={styles.CourseCreate}
-              />
+              <div className={styles.JobsInner}>
+                <h3>Job Offers</h3>
+                <p>
+                  The Job Offers are all for Programmers and are all suitable
+                  for Code Factory Alumni. The User can see the most important
+                  information about the offer here as well as click the "To
+                  Offer" button which leads to the original Job Offer website.
+                </p>
+              </div>
             </div>
           </div>
         </div>

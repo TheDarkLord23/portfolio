@@ -36,7 +36,6 @@ function Tutor() {
 
   return (
     <section id="project" className={styles.container}>
-      <h1>RESPONSIVE SECTION</h1>
       <div className={styles.topSection}>
         <a href="/#projects">
           <button className="hover" id={styles.home}>
@@ -287,6 +286,7 @@ function Tutor() {
           <div className={styles.LogoDiv}>
             <img src={Logo} title="Logo" className={styles.Logo} />
             <div className={styles.innerText}>
+              <h3>Logo</h3>
               <p>
                 The "Tutor Masters" logo features a clean, modern graduation cap
                 symbolizing academic achievement and excellence. Designed with
