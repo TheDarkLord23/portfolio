@@ -51,6 +51,12 @@ function Tutor() {
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
+          <img
+            src={IMG}
+            alt="Tutor Thumbnail"
+            className={styles.thumbnailMobile}
+          />
+
           <div className={styles.projectTopSection}>
             <div className={styles.title}>
               <h1>Tutor Masters</h1>
@@ -346,7 +352,7 @@ function Tutor() {
             </div>
           </div>
 
-          <div className={styles.contactsDiv}>
+          <div className={styles.LoginDiv}>
             <img src={Login} title="Login" className={styles.Login} />
             <div className={styles.innerText}>
               <h3>Login and Registration</h3>
@@ -358,7 +364,25 @@ function Tutor() {
             <img src={Register} title="Register" className={styles.Register} />
           </div>
 
-          <div className={styles.contactsDiv}>
+          <div className={styles.LoginDivMobile}>
+            <div className={styles.FlexImages}>
+              <img src={Login} title="Login" className={styles.Login} />
+              <img
+                src={Register}
+                title="Register"
+                className={styles.Register}
+              />
+            </div>
+            <div className={styles.innerText}>
+              <h3>Login and Registration</h3>
+              <p>
+                Two cleand and simple forms for fast logging in or registration
+                with option for uploading a profile picture.
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.coursesDiv}>
             <div className={styles.innerText}>
               <h3>Courses</h3>
               <p>
@@ -369,6 +393,9 @@ function Tutor() {
             </div>
             <img src={Courses} title="Courses" className={styles.Courses} />
           </div>
+
+          <hr className={styles.dividerComponents} />
+
           <div id="Student" className={styles.StudentDiv}>
             <h1>Student</h1>
             <div className={styles.dashboardStudentDiv}>
@@ -405,6 +432,9 @@ function Tutor() {
               </div>
             </div>
           </div>
+
+          <hr className={styles.dividerComponents} />
+
           <div id="Tutor" className={styles.TutorDiv}>
             <h1>Tutor</h1>
             <p>
@@ -432,6 +462,8 @@ function Tutor() {
               />
             </div>
           </div>
+
+          <hr className={styles.dividerComponents} />
 
           <div id="Admin" className={styles.AdminDiv}>
             <h1>Admin</h1>
@@ -469,6 +501,7 @@ function Tutor() {
         </div>
       </div>
       <ScrollToTopButton></ScrollToTopButton>
+
       <Footer></Footer>
     </section>
   );
