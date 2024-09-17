@@ -29,7 +29,7 @@
   div {
     text-align: center;
     width: 380px;
-    height: 380px;
+    height: 350px;
     background-color: var(--project-card-bg);
     border-radius: 0.8rem;
     box-shadow: var(--project-card-shadow);
@@ -37,6 +37,10 @@
     img {
       width: 100%;
       border-radius: 0.8rem;
+    }
+
+    h3 {
+      padding-top: 5px;
     }
   }
 }
