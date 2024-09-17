@@ -83,10 +83,10 @@ function Hero() {
             <button className="hover">Resume</button>
           </a>
         </div>
+        <div className={styles.scrollButton} onClick={scrollToNextSection}>
+          <img className={styles.arrow} src={arrow} alt="" />
+        </div>
       </section>
-      <div className={styles.scrollButton} onClick={scrollToNextSection}>
-        <img className={styles.arrow} src={arrow} alt="" />
-      </div>
     </>
   );
 }
