@@ -4,7 +4,7 @@
   margin-top: 50px;
   gap: 20px;
   text-align: center;
-  height: 100dvh;
+  height: 90dvh;
   min-height: 500px;
 
   .hero {
@@ -133,6 +133,11 @@
       max-width: 350px;
       width: 350px;
     }
+  }
+  .colorMode {
+    position: absolute;
+    right: 0px;
+    width: 30px;
   }
 }
 

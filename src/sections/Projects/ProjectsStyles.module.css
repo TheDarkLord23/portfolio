@@ -7,7 +7,6 @@
   a {
     width: fit-content;
     text-decoration: none;
-
     transition: transform 200ms ease-in-out;
   }
 
@@ -28,8 +27,8 @@
 
   div {
     text-align: center;
-    width: 380px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     background-color: var(--project-card-bg);
     border-radius: 0.8rem;
     box-shadow: var(--project-card-shadow);
@@ -40,7 +39,12 @@
     }
 
     h3 {
-      padding-top: 5px;
+      padding: 5px;
+    }
+
+    p {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -54,5 +58,23 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 30px;
+
+    div {
+      text-align: center;
+      width: 380px;
+      height: 350px;
+      background-color: var(--project-card-bg);
+      border-radius: 0.8rem;
+      box-shadow: var(--project-card-shadow);
+
+      img {
+        width: 100%;
+        border-radius: 0.8rem;
+      }
+
+      h3 {
+        padding-top: 5px;
+      }
+    }
   }
 }

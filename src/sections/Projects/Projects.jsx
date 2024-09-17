@@ -8,7 +8,6 @@ import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   useEffect(() => {
-    // Check if the URL contains '#projects'
     if (window.location.hash === "#projects") {
       const projectsSection = document.getElementById("projects");
       if (projectsSection) {
