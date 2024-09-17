@@ -262,7 +262,7 @@ function Alumni() {
             <div className={styles.LogoDiv}>
               <img src={Logo} title="Logo" className={styles.Logo} />
               <div className={styles.innerText}>
-                <h3>Components</h3>
+                <h3>Logo</h3>
                 <p>
                   In the Code Factory Alumni logo I have combined the concept of
                   a factory with a digital theme. The orange silhouette of a
@@ -300,7 +300,7 @@ function Alumni() {
               </div>
             </div>
           </div>
-
+          <hr className={styles.dividerComponents} />
           <div className={styles.heroDiv}>
             <div className={styles.innerText}>
               <h3>Hero</h3>
@@ -341,6 +341,8 @@ function Alumni() {
             </video>
           </div>
 
+          <hr className={styles.dividerComponents} />
+
           <div id="Alumni" className={styles.AlumniDiv}>
             <h1>Alumni</h1>
             <div className={styles.innerAlumniDiv}>
@@ -357,6 +359,8 @@ function Alumni() {
             </div>
           </div>
 
+          <hr className={styles.dividerComponents} />
+
           <div id="Events" className={styles.EventsDiv}>
             <h1>Events</h1>
             <p>
@@ -367,6 +371,8 @@ function Alumni() {
               <img src={Events} title="Events" className={styles.Events} />
             </div>
           </div>
+
+          <hr className={styles.dividerComponents} />
 
           <div id="Careers" className={styles.CareersDiv}>
             <h1>Career</h1>
