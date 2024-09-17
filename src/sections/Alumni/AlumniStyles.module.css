@@ -494,7 +494,7 @@ img {
   }
 }
 
-@media (width >= 800px) {
+@media (width <= 480px) {
   .content {
     display: block;
   }
