@@ -493,3 +493,22 @@ img {
     }
   }
 }
+
+@media (width >= 800px) {
+  .content {
+    display: block;
+  }
+
+  @media (width >= 1400px) {
+    #root {
+      gap: 150px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
+  }
+}
