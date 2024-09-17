@@ -56,6 +56,12 @@ function Alumni() {
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
+          <img
+            src={IMG}
+            alt="Tutor Thumbnail"
+            className={styles.thumbnailMobile}
+          />
+
           <div className={styles.projectTopSection}>
             <div className={styles.title}>
               <h1>Code Factory Alumni</h1>
