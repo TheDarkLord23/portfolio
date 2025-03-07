@@ -1,8 +1,8 @@
 import React from "react";
 
-function ProjectCard({ src, link, title, description }) {
+function ProjectCard({ src, link, target, title, description }) {
   return (
-    <a href={link}>
+    <a href={link} target={target}>
       <div>
         <img src={src} alt={`${title} logo`} />
         <h3>{title}</h3>

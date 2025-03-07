@@ -1,10 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 50px;
   gap: 20px;
   text-align: center;
-  height: 100dvh;
+  height: 90dvh;
   min-height: 500px;
 
   .hero {
@@ -22,6 +22,10 @@
         width: 30px;
       }
     }
+  }
+
+  .socials {
+    border-radius: 0;
   }
 
   a {
@@ -58,7 +62,7 @@
 
 .colorMode {
   position: absolute;
-  right: 0;
+  right: 30px;
   width: 30px;
 }
 
@@ -129,6 +133,11 @@
       max-width: 350px;
       width: 350px;
     }
+  }
+  .colorMode {
+    position: absolute;
+    right: 0px;
+    width: 30px;
   }
 }
 
