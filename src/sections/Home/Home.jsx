@@ -4,7 +4,6 @@ import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
-import Collaborations from "../Collaborations/Collaborations";
 import Programs from "../Programs/Programs";
 
 function Home() {
@@ -12,7 +11,6 @@ function Home() {
     <>
       <Hero />
       <Projects />
-      <Collaborations />
       <Skills />
       <Contact />
       <Footer />
