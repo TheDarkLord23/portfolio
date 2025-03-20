@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import styles from "./CollabStyles.module.css";
-import Tutor from "../../assets/Tutor/banner.jpg";
-import Alumni from "../../assets/Alumni/Thumbnail.png";
-import Horizonti from "../../assets/Horizonti.png";
-import GA from "../../assets/GA.png";
 import ProjectCard from "../../common/ProjectCard";
+import DiskontDepot from "../../assets/Thumbnails/Diskont-Thumbnail.jpg";
+import LaserThumbnail from "../../assets/Thumbnails/Laser-Thumbnail.jpg";
+import PlayworldThumbnail from "../../assets/Thumbnails/Playworld-Thumbnail.jpg";
+import ShimaleThumbnail from "../../assets/Thumbnails/Shimale-Thumbnail.jpg";
 
 function Collab() {
   useEffect(() => {
@@ -21,29 +21,31 @@ function Collab() {
       <h1 className="sectionTitle">Collaborations</h1>
       <div className={styles.collabContainer}>
         <ProjectCard
-          src={Tutor}
-          link="/tutor"
-          title="Tutor Master"
-          description="Unlock your potential with the best University Tutors"
-        />
-        <ProjectCard
-          src={Alumni}
-          link="/alumni"
-          title="Code Factory Alumni"
-          description="Unveiling the Success Stories of Code Factory graduates"
-        />
-        <ProjectCard
-          src={Horizonti}
-          link="https://horizon-ti.com/"
-          title="Horizonti"
-          description="A charity organisation focused on bringin Bulgarian people in Vienna together"
+          src={DiskontDepot}
+          link="https://silvioh11.sg-host.com/"
+          title="Diskont Depot"
+          description="Besser Billig Lagern"
           target="_blank"
         />
         <ProjectCard
-          src={GA}
-          link="https://gastudio.org/"
-          title="Gastudio Website"
-          description="My own photography and videography portfolio website"
+          src={LaserThumbnail}
+          link="https://www.laserdance.at/"
+          title="Laser Dance"
+          description="Das brandneue Indoor-Entertainment und Action-Erlebnis im Wiener Prater"
+          target="_blank"
+        />
+        <ProjectCard
+          src={PlayworldThumbnail}
+          link="https://playworld-spielberg.at/"
+          title="Playworld Spielberg"
+          description="Österreichs größter Indoor-Freizeitpark"
+          target="_blank"
+        />
+        <ProjectCard
+          src={ShimaleThumbnail}
+          link="https://silvioh8.sg-host.com/"
+          title="Shimale Peleg"
+          description="See your House in a different light"
           target="_blank"
         />
       </div>
