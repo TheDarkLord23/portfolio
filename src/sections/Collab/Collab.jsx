@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "./ProjectsStyles.module.css";
+import styles from "./CollabStyles.module.css";
 import Tutor from "../../assets/Tutor/banner.jpg";
 import Alumni from "../../assets/Alumni/Thumbnail.png";
 import Horizonti from "../../assets/Horizonti.png";
