@@ -24,14 +24,14 @@ function Collab() {
           src={DiskontDepot}
           link="https://silvioh11.sg-host.com/"
           title="Diskont Depot"
-          description="Besser Billig Lagern"
+          description={"Besser\nBillig\nLagern"}
           target="_blank"
         />
         <ProjectCard
           src={LaserThumbnail}
           link="https://www.laserdance.at/"
           title="Laser Dance"
-          description="Das brandneue Indoor-Entertainment und Action-Erlebnis im Wiener Prater"
+          description="Indoor-Entertainment und Action-Erlebnis im Prater"
           target="_blank"
         />
         <ProjectCard
@@ -45,7 +45,7 @@ function Collab() {
           src={ShimaleThumbnail}
           link="https://silvioh8.sg-host.com/"
           title="Shimale Peleg"
-          description="See your House in a different light"
+          description={"See your House\nin a different light"}
           target="_blank"
         />
       </div>
