@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./sections/Home/Home";
 import Alumni from "./sections/Alumni/Alumni";
 import Tutor from "./sections/Tutor/Tutor";
+import Collab from "./sections/Collab/Collab";
 
 function App() {
   return (
