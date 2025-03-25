@@ -24,7 +24,7 @@ function Collab() {
           src={DiskontDepot}
           link="https://silvioh11.sg-host.com/"
           title="Diskont Depot"
-          description={"Besser\nBillig\nLagern"}
+          description={"Besser Billig Lagern"}
           target="_blank"
         />
         <ProjectCard
