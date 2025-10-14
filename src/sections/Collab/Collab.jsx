@@ -22,7 +22,7 @@ function Collab() {
       <div className={styles.collabContainer}>
         <ProjectCard
           src={DiskontDepot}
-          link="https://silvioh11.sg-host.com/"
+          link="https://diskont-depot.at/"
           title="Diskont Depot"
           description={"Besser Billig Lagern"}
           target="_blank"
@@ -43,7 +43,7 @@ function Collab() {
         />
         <ProjectCard
           src={ShimaleThumbnail}
-          link="https://silvioh8.sg-host.com/"
+          link="https://shimalepeleg.com/"
           title="Shimale Peleg"
           description={"See your House\nin a different light"}
           target="_blank"
