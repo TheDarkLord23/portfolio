@@ -3,7 +3,7 @@ import styles from "./ProjectsStyles.module.css";
 import Tutor from "../../assets/Tutor/banner.jpg";
 import Alumni from "../../assets/Alumni/Thumbnail.png";
 import Horizonti from "../../assets/Horizonti.png";
-import GA from "../../assets/GA.png";
+import Carefresh from "../../assets/Thumbnails/carefresh.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -21,6 +21,20 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
+          src={Carefresh}
+          link="https://carefresh.at/"
+          title="Carefresh"
+          description="Mobile car cleaning, detailing and polishing"
+          target="_blank"
+        />
+        <ProjectCard
+          src={Horizonti}
+          link="https://horizon-ti.com/"
+          title="Horizonti"
+          description="A charity organisation focused on bringin Bulgarian people in Vienna together"
+          target="_blank"
+        />
+        <ProjectCard
           src={Tutor}
           link="/tutor"
           title="Tutor Master"
@@ -32,20 +46,15 @@ function Projects() {
           title="Code Factory Alumni"
           description="Unveiling the Success Stories of Code Factory graduates"
         />
-        <ProjectCard
-          src={Horizonti}
-          link="https://horizon-ti.com/"
-          title="Horizonti"
-          description="A charity organisation focused on bringin Bulgarian people in Vienna together"
-          target="_blank"
-        />
-        <ProjectCard
+        {/* <ProjectCard
           src={GA}
           link="https://gastudio.org/"
           title="Gastudio Website"
           description="My own photography and videography portfolio website"
           target="_blank"
         />
+        */}
+       
       </div>
     </section>
   );
