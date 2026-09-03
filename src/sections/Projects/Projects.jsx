@@ -3,7 +3,7 @@ import styles from "./ProjectsStyles.module.css";
 import Tutor from "../../assets/Tutor/banner.jpg";
 import Alumni from "../../assets/Alumni/Thumbnail.png";
 import Horizonti from "../../assets/Horizonti.png";
-import Carefresh from "../../assets/Thumbnails/carefresh.png";
+import Carefresh from "../../assets/Thumbnails/Carefresh.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
